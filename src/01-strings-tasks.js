@@ -19,9 +19,9 @@
  *   '',  'bb'  => 'bb'
  */
 
-function concatenateStrings(value1: string, value2: string) {
+function concatenateStrings(value1: string, value2: string):string {
   return `${value1}${value2}`
-}
+} 
 
 /**
  * Returns the length of given string.
