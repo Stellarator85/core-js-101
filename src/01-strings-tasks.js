@@ -283,7 +283,7 @@ function isString(value) {
  */
 
 function getCardId(value) {
-  let cards = [
+  const cards = [
     'A♣',
     '2♣',
     '3♣',
