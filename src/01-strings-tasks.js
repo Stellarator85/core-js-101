@@ -67,10 +67,10 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, John Doe!' => 'John Doe'
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
+
 function extractNameFromTemplate(value) {
   return value.slice(7,-1);
 }
-
 
 /**
  * Returns a first char of the given string.
