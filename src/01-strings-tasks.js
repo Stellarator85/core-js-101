@@ -69,7 +69,7 @@ function getStringFromTemplate(firstName, lastName) {
  */
 
 function extractNameFromTemplate(value) {
-  return value.slice(7,-1);
+    return value.split(" ")[1] + " " + value.split(" ")[2].slice(0, -1)
 }
 
 /**
