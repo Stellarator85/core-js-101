@@ -185,7 +185,7 @@ function convertToUpperCase(str) {
  */
 
 function extractEmails(str) {
-  return str.split(";");
+  return str.split(';');
 }
 
 /**
