@@ -134,7 +134,7 @@ function repeatString(value, count) {
  */
 
 function removeFirstOccurrences(str, value) {
-  return str.replace(value, ``);
+  return str.replace(value, '');
 }
 
 /**
