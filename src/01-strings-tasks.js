@@ -150,7 +150,7 @@ function removeFirstOccurrences(str, value) {
  */
 
 function unbracketTag(str) {
-  return str.replace("<", "").replace(">", "");
+  return str.slice(1, -1);
 }
 
 /**
