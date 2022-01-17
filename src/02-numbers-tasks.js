@@ -219,7 +219,7 @@ function isPrime(/* n */) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(value, def=0) {
+function toNumber(value, def) {
     if (+value) return +value;
     else return def;
 }
