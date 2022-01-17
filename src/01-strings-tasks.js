@@ -19,7 +19,7 @@
  *   '',  'bb'  => 'bb'
  */
 
-function concatenateStrings(value1, value2) {
+function concatenateStrings(value1: string, value2: string) {
   return `${value1}${value2}`
 }
 
