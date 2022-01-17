@@ -69,7 +69,8 @@ function getStringFromTemplate(firstName, lastName) {
  */
 
 function extractNameFromTemplate(value) {
-    return value.split(" ")[1] + " " + value.split(" ")[2].slice(0, -1)
+ let arr = value.split(' ');
+ return `${arr[1]} ${arr[2].substr(0, arr[2].length - 1)}`;
 }
 
 /**
