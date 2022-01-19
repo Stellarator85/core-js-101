@@ -160,7 +160,7 @@ function insertItem(arr, item, index) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'a', 'b', 'c' ]
  */
 function getHead(arr, n) {
-  arr.splice(n, arr.length-1);
+  arr.splice(n, arr.length - 1);
   return arr;
 }
 
