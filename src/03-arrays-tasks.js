@@ -119,7 +119,6 @@ function getUpperCaseStrings(arr) {
   return arr.map((x) => x.toUpperCase());
 }
 
-
 /**
  * Returns the array of string lengths from the specified string array.
  *
