@@ -287,9 +287,7 @@ function propagateItemsByPositionIndex(arr) {
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
 function get3TopItems(arr) {
-  let arr1 = arr.sort(function(a, b){
-    return b - a;
-  });
+  let arr1 = arr.sort((a, b) => b - a);
   arr1.length = 3;
   return arr1;
 }
