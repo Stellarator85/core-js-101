@@ -287,14 +287,14 @@ function propagateItemsByPositionIndex(arr) {
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
 function get3TopItems(arr) {
-  function sorter(a, b) {
+  function sortByValue(a, b) {
     return a - b;
   }
 
   if (arr.length <= 3) {
-    return arr.sort(sorter).reverse();
+    return arr.sort(sortByValue).reverse();
   }
-  return arr.sort(sorter).reverse().slice(0, 3);
+  return arr.sort(sortByValue).reverse().slice(0, 3);
 }
 
 /**
