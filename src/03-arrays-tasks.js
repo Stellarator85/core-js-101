@@ -340,7 +340,7 @@ function sortDigitNamesByNumericOrder(arr) {
     else if (word === 'eight') return 8;
     else if (word === 'nine') return 9;
   };
-  return arr.map(x => wordToDigit(x));
+  return arr.map((x) => wordToDigit(x));
 }
 
 /**
