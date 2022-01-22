@@ -328,20 +328,24 @@ function getPositivesCount(arr) {
  *   [ 'one','one','one','zero' ]     => [ 'zero','one','one','one' ]
  */
 function sortDigitNamesByNumericOrder(arr) {
-  function wordToDigit(word) {
-    if (word === 'zero') return 0;
-    else if (word === 'one') return 1;
-    else if (word === 'two') return 2;
-    else if (word === 'three') return 3;
-    else if (word === 'four') return 4;
-    else if (word === 'five') return 5;
-    else if (word === 'six') return 6;
-    else if (word === 'seven') return 7;
-    else if (word === 'eight') return 8;
-    else if (word === 'nine') return 9;
+  const zeroToNine = {
+    zero: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+  };
+  function findKey(obj, value) {
+    return Object.keys(obj).find((key) => obj[key] === value);
   }
-  
-  return arr.map((x) => wordToDigit(x));
+  const sortedNumbers = arr.map((item) => zeroToNine[item]).sort();
+
+  return sortedNumbers.map((number) => findKey(zeroToNine, number));
 }
 
 /**
