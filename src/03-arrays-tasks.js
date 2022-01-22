@@ -469,10 +469,11 @@ function sortCitiesArray(arr) {
  *           [0,0,0,0,1]]
  */
 function getIdentityMatrix(n) {
-  const arr = Array(n).fill(0).map((x) => Array(n).fill(0));
-  arr.map((x) => x.splice(arr.indexOf(x), 1, 1));
-  
-  return arr;
+  return Array(n).fill(0).map((x, i) => {
+    const arr = Array(n).fill(0);
+    arr.splice(i, 1, 1);
+    return arr;
+  });
 }
 
 /**
