@@ -470,7 +470,7 @@ function sortCitiesArray(arr) {
  */
 function getIdentityMatrix(n) {
   const arr = Array(n).fill(0).map((x) => Array(n).fill(0));
-  arr.map((x) => x.splice(arr.indexOf(x), 1, 1));
+  const splicedPart = arr.map((x) => x.splice(arr.indexOf(x), 1, 1));
   return arr;
 }
 
